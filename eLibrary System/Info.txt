@@ -1,0 +1,1 @@
+Basically it is replica of eLibrary System for Our College using JSP and Basic HTML and CSS and JavaScript and MYSQL.
