@@ -1,0 +1,2 @@
+A Android app to help farmers predict WhiteFly in Cotton Crop based on the weather forecast predictions of Punjab Agricutural University Ludhiana. BAsically it is a android portal for http://web.pau.edu/dsswfly/ 
+A project under guidance of Professors of Punjab Agriculture University Ludhiana.
