@@ -628,21 +628,12 @@ class OtherFrameGNB(Tk.Toplevel):
         canvas.get_tk_widget().grid(row=3, column=12, columnspan=10)
 
         text = """
-        Decision tree is a classifier in the form of a tree structure.Decision trees classify instances
-        or examples by starting at the root of the tree and moving through it until a leaf node.
-
-            1) Decision node: specifies a test on a single attribute
-            2) Leaf node: indicates the value of the target attribute 
-            3) Arc/edge: split of one attribute
-            4) Path: a disjunction of test to make the final decision 
-            5) Entropy : A measure of homogeneity of the set of examples.
-                         Given a set S of positive and negative examples of some target concept (a 2-class problem), 
-                         the entropy of set S relative to this binary classification is
-
-                                E(S) = - p(P)log2 p(P) – p(N)log2 p(N) 
-
-            6) Information gain measures the expected reduction in entropy, or uncertainty.
-
+        Naive Bayes can be extended to real-valued attributes, most commonly by assuming a 
+        Gaussian distribution.
+        This extension of naive Bayes is called Gaussian Naive Bayes. Other functions 
+        can be used to estimate the distribution of the data,  but the 
+        Gaussian (or Normal distribution) is the easiest to work with because you 
+        only need to estimate the mean and the standard deviation from your training data.
                 """
 
         Heading = Tk.Label(self, text="Gaussian Navie Bayes Algorithm : ", bg="black",
@@ -718,21 +709,8 @@ class OtherFrameBNB(Tk.Toplevel):
         canvas.get_tk_widget().grid(row=3, column=12, columnspan=10)
 
         text = """
-        Decision tree is a classifier in the form of a tree structure.Decision trees classify instances
-        or examples by starting at the root of the tree and moving through it until a leaf node.
-
-            1) Decision node: specifies a test on a single attribute
-            2) Leaf node: indicates the value of the target attribute 
-            3) Arc/edge: split of one attribute
-            4) Path: a disjunction of test to make the final decision 
-            5) Entropy : A measure of homogeneity of the set of examples.
-                         Given a set S of positive and negative examples of some target concept (a 2-class problem), 
-                         the entropy of set S relative to this binary classification is
-
-                                E(S) = - p(P)log2 p(P) – p(N)log2 p(N) 
-
-            6) Information gain measures the expected reduction in entropy, or uncertainty.
-
+                The Bernoulli naive Bayes classifier assumes that all our features 
+                are binary such that they take only two values 
                 """
 
         Heading = Tk.Label(self, text="Bernoulli Navie Bayes Algorithm : ", bg="black",
@@ -809,21 +787,13 @@ class OtherFrameNB(Tk.Toplevel):
         canvas.get_tk_widget().grid(row=3, column=12, columnspan=10)
 
         text = """
-        Decision tree is a classifier in the form of a tree structure.Decision trees classify instances
-        or examples by starting at the root of the tree and moving through it until a leaf node.
+        Naive Bayes classifier for multinomial models
 
-            1) Decision node: specifies a test on a single attribute
-            2) Leaf node: indicates the value of the target attribute 
-            3) Arc/edge: split of one attribute
-            4) Path: a disjunction of test to make the final decision 
-            5) Entropy : A measure of homogeneity of the set of examples.
-                         Given a set S of positive and negative examples of some target concept (a 2-class problem), 
-                         the entropy of set S relative to this binary classification is
-
-                                E(S) = - p(P)log2 p(P) – p(N)log2 p(N) 
-
-            6) Information gain measures the expected reduction in entropy, or uncertainty.
-
+The multinomial Naive Bayes classifier is suitable for 
+classification with discrete features (e.g., word counts for text
+classification). The multinomial distribution normally requires integer 
+feature counts.
+        
                 """
 
         Heading = Tk.Label(self, text="Multinomial Navie Bayes Algorithm : ", bg="black",
@@ -900,21 +870,17 @@ class OtherFrameLogistic(Tk.Toplevel):
         canvas.get_tk_widget().grid(row=3, column=12, columnspan=10)
 
         text = """
-        Decision tree is a classifier in the form of a tree structure.Decision trees classify instances
-        or examples by starting at the root of the tree and moving through it until a leaf node.
+         Logistic Regression is used when the dependent variable(target) is categorical.
+For example,
+    To predict whether an email is spam (1) or (0)
+    Whether the tumor is malignant (1) or not (0)
+    
+    The logistic function, also called the sigmoid function was developed by statisticians to 
+    describe properties of population growth in ecology, rising quickly and maxing out at the 
+    ]carrying capacity of the environment. It’s an S-shaped curve that can take any real-valued 
+    number and map it into a value between 0 and 1, but never exactly at those limits.
 
-            1) Decision node: specifies a test on a single attribute
-            2) Leaf node: indicates the value of the target attribute 
-            3) Arc/edge: split of one attribute
-            4) Path: a disjunction of test to make the final decision 
-            5) Entropy : A measure of homogeneity of the set of examples.
-                         Given a set S of positive and negative examples of some target concept (a 2-class problem), 
-                         the entropy of set S relative to this binary classification is
-
-                                E(S) = - p(P)log2 p(P) – p(N)log2 p(N) 
-
-            6) Information gain measures the expected reduction in entropy, or uncertainty.
-
+                        1 / (1 + e^-value)
                 """
 
         Heading = Tk.Label(self, text="Logistic Regression Algorithm : ", bg="black",
@@ -991,21 +957,11 @@ class OtherFrameLDA(Tk.Toplevel):
         canvas.get_tk_widget().grid(row=3, column=12, columnspan=10)
 
         text = """
-        Decision tree is a classifier in the form of a tree structure.Decision trees classify instances
-        or examples by starting at the root of the tree and moving through it until a leaf node.
-
-            1) Decision node: specifies a test on a single attribute
-            2) Leaf node: indicates the value of the target attribute 
-            3) Arc/edge: split of one attribute
-            4) Path: a disjunction of test to make the final decision 
-            5) Entropy : A measure of homogeneity of the set of examples.
-                         Given a set S of positive and negative examples of some target concept (a 2-class problem), 
-                         the entropy of set S relative to this binary classification is
-
-                                E(S) = - p(P)log2 p(P) – p(N)log2 p(N) 
-
-            6) Information gain measures the expected reduction in entropy, or uncertainty.
-
+        Linear discriminant analysis (LDA), normal discriminant analysis (NDA), or 
+        discriminant function analysis is a generalization of Fisher's linear 
+        discriminant, a method used in statistics, pattern recognition and machine 
+        learning to find a linear combination of features that characterizes or separates
+         two or more classes of objects or events. 
                 """
 
         Heading = Tk.Label(self, text="Linear Discriminant AnalysisAlgorithm : ", bg="black",
@@ -1082,21 +1038,11 @@ class OtherFrameKNC(Tk.Toplevel):
         canvas.get_tk_widget().grid(row=3, column=12, columnspan=10)
 
         text = """
-        Decision tree is a classifier in the form of a tree structure.Decision trees classify instances
-        or examples by starting at the root of the tree and moving through it until a leaf node.
-
-            1) Decision node: specifies a test on a single attribute
-            2) Leaf node: indicates the value of the target attribute 
-            3) Arc/edge: split of one attribute
-            4) Path: a disjunction of test to make the final decision 
-            5) Entropy : A measure of homogeneity of the set of examples.
-                         Given a set S of positive and negative examples of some target concept (a 2-class problem), 
-                         the entropy of set S relative to this binary classification is
-
-                                E(S) = - p(P)log2 p(P) – p(N)log2 p(N) 
-
-            6) Information gain measures the expected reduction in entropy, or uncertainty.
-
+        KNN can be used for both classification and regression predictive problems. 
+        However, it is more widely used in classification problems in the industry.
+        The simple version of the K-nearest neighbor classifier algorithms is to predict 
+        the target label by finding the nearest neighbor class. The closest class will be 
+        identified using the distance measures like Euclidean distance.
                 """
 
         Heading = Tk.Label(self, text="KNeighbors Classifier Algorithm : ", bg="black",
@@ -1174,21 +1120,10 @@ class OtherFrameSVC(Tk.Toplevel):
         canvas.get_tk_widget().grid(row=3, column=12, columnspan=10)
 
         text = """
-        Decision tree is a classifier in the form of a tree structure.Decision trees classify instances
-        or examples by starting at the root of the tree and moving through it until a leaf node.
-
-            1) Decision node: specifies a test on a single attribute
-            2) Leaf node: indicates the value of the target attribute 
-            3) Arc/edge: split of one attribute
-            4) Path: a disjunction of test to make the final decision 
-            5) Entropy : A measure of homogeneity of the set of examples.
-                         Given a set S of positive and negative examples of some target concept (a 2-class problem), 
-                         the entropy of set S relative to this binary classification is
-
-                                E(S) = - p(P)log2 p(P) – p(N)log2 p(N) 
-
-            6) Information gain measures the expected reduction in entropy, or uncertainty.
-
+        A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. 
+        In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane 
+        which categorizes new examples. In two dimentional space this hyperplane is a line dividing a plane in two parts 
+        where in each class lay in either side.
                 """
 
         Heading = Tk.Label(self, text="Support Vector Machine Algorithm : ", bg="black",
